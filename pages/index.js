@@ -18,7 +18,7 @@ const Index = ({ notes }) => {
                     </Link>
                   </Card.Header>
                 </Card.Content>
-                <Card.Content extra>
+                <Card.Content extra className="button-container">
                   <Link href={`/${note._id}`}>
                     <Button primary>View</Button>
                   </Link>
@@ -40,7 +40,6 @@ const Index = ({ notes }) => {
 Index.getInitialProps = async () => {
   const res = await fetch('http://localhost:3000/api/notes')
   const { data } = await res.json();
-  console.log(data)
   return { notes: data }
 }
 
