@@ -30,3 +30,8 @@ h1 {
 .navbar-brand:hover, .create:hover {
     color: #fff;
 }
+
+.form-container {
+    width: 400px;
+    margin: 20px auto;
+}
