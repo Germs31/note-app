@@ -9,6 +9,12 @@ const Navbar = () => {
             <Link href="/new">
                 <a className="create">Create Note</a>
             </Link>
+            <Link href="/login">
+                <a className="create">Login</a>
+            </Link>
+            <Link href="/register">
+                <a className="create">Register</a>
+            </Link>
         </nav>
     )
 }
